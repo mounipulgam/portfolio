@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+/* Global variables */
+:root {
+  --primary: #cf171a;
+  --dark-primary: #e1dede;
+  --secondary-primary: #fefefe;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-primary);
+  padding: 25px;
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header ul li {
+    margin-right: 30px;
+  }
+  
+  header ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    transition-timing-function: all 0.3s ease 0s;
+  }
+  
+  header ul li a:hover {
+    color: var(--primary);
+    transition: all 0.3s ease 0s;
+  }
+  
+  /* Home Section */
+  .home-section {
+    background-color: var(--dark-primary);
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 100px 120px 50px 200px; 
+  }
+  
+  .home-section__title {
+    font-size: 48px;
+  }
+  
+  .home-section__title span {
+    color: var(--primary);
+  }
+  
+  .home-section__desc {
+    color: #212121;
+  }
+  
+  /* About Section */
+  .about-section {
+    background-color: var(--secondary-primary);
+    color: #000;
+    display: inline-block;
+    padding: 50px 120px;
+  
+  }
+
+  .about-section h2 > span {
+    color: var(--primary);
+  }
+    
+  .about-content {
+    margin-left: 100px;
+    max-width: 100%;
+    align-items: center;  
+  }
+  
+  .about-content h2 {
+    font-size: 33px;
+  }
+  
+  .about-content p {
+    color: #212121;
+    font-size: 15px;
+  }
+
+  /*About Education*/
+  .about-education {
+    padding: 20px;
+  }
+  .about-education h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .about-education-cards {
+    display: flex;
+    margin-left: 100px;
+  }
+  /*About Masters Education Card*/
+  .about-education-cards-box_york {
+    width: 33.33%;
+    margin: 35px 10px;
+    padding: 33px;
+    background-color: var(--dark-primary);
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+    justify-items: center;
+  }
+  /*About Bachelors Education Card*/
+  .about-education-cards-box_guru {    
+    width: 33.33%;
+    margin: 35px 10px;
+    padding: 33px;
+    background-color: var(--dark-primary);
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+    justify-items: center;
+  }
+  /*Displays Image when hovered*/
+  .about-education-cards-box_york:hover {
+    background-image: url('./university_york_img.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: translateY(-2px); 
+    color: #fff;
+  }
+
+  /*Displays Image when hovered*/
+  .about-education-cards-box_guru:hover{
+    background-image: url('./Gurunanak_img.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: translateY(-2px);
+    color: #fff;
+  }
+
+  .education-card-box__desc h4 {
+    font-size: 18px;
+    margin: 18px 0 10px 0;
+  }
+  
+  .education-card-box__desc p {
+    font-size: 14px;
+  }
+
+   /*About Skills*/
+  .about_skills_title{
+    padding : 20px;
+  }
+
+  .about_skills h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .skills {
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 100px;
+  }
+  .skills__skill {
+    padding: 14px 28px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    background-color: var(--dark-primary);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #212121;
+    }
+
+    .skills__skill:hover {
+      color: var(--primary);
+    }
+
+ 
+  /* Projects Section */
+  .projects-section {
+    background-color: var(--dark-primary);
+    color: #000;
+    padding: 50px 120px;
+    
+  }
+  
+  .projects-section h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .projects-section h2 > span {
+    color: var(--primary);
+  }
+  
+  .projects-cards {
+    display: flex;
+    margin-left: 100px;
+  }
+  
+  .projects-card-box {
+    width: 33.33%;
+    margin: 35px 10px;
+    padding: 33px;
+    background-color:var(--secondary-primary);
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+    justify-items: center;
+  }
+  
+  .projects-card-box:hover {
+    box-shadow: 3px 5px 20px #e0485a;
+    transition: all 0.5s ease 0s;
+    transform: translateY(-2px);  
+  }
+  
+  .projects-card-box__desc h4 {
+    font-size: 18px;
+    margin: 18px 0 10px 0;
+  }
+  
+  .projects-card-box__desc p {
+    font-size: 14px;
+    color: #212121;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--dark-primary);
+    color: #212121;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+  
+  .fa-linkedin {
+    font-size: 20px;
+  }
+  
+  .fa-github{
+    font-size: 20px;
+  }
+
+  /* Media queries */
+  @media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    header ul {
+      margin-top: 10px;
+    }
+  
+    /* Home Section */
+    .home-section {
+      flex-direction: column;
+      padding: 40px;
+      padding-top: 130px;
+    }
+    
+    /* About Section */
+    .about-section {
+      flex-direction: column;
+      padding: 40px;
+    }
+  
+    .about-content {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  
+    /* Projects Section */
+   .projects-section {
+      padding: 40px;
+    }
+  
+    .projects-cards {
+      margin-top: 15px;
+      flex-direction: column;
+    }
+  
+    .projects-card-box {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+  }
