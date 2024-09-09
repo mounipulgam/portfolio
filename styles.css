@@ -143,7 +143,7 @@ header ul {
   }
   /*Displays Image when hovered*/
   .about-education-cards-box_york:hover {
-    background-image: url('./university_york_img.png');
+    background-image: url('./Image/university_york_img.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transform: translateY(-2px); 
@@ -152,7 +152,7 @@ header ul {
 
   /*Displays Image when hovered*/
   .about-education-cards-box_guru:hover{
-    background-image: url('./Gurunanak_img.jpg');
+    background-image: url('./Image/Gurunanak_img.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transform: translateY(-2px);
